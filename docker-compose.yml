@@ -7,3 +7,4 @@ services:
       - "1443:443"
     volumes:
       - ./data:/home/data
+    restart: always
