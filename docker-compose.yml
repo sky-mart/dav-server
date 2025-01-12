@@ -1,0 +1,9 @@
+services:
+  davnotes:
+    build: .
+    image: davnotes
+    ports:
+      - "1080:80"
+      - "1443:443"
+    volumes:
+      - ./data:/home/data
