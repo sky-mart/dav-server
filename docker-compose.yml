@@ -1,10 +1,11 @@
 services:
   davnotes:
     build: .
+    container_name: "notes_server"
     image: davnotes
     ports:
       - "1080:80"
       - "1443:443"
     volumes:
       - ./data:/home/data
-    restart: always
+    restart: on-failure
